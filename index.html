@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="javascript/app.js"></script>
 </head>
+
 <body>
     
-</body>
-</html>
+        <div class="container page-bkgd">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="jumbotron">
+                        <h1>Gamer's Search</h1>
+                        <p>The gaming suggestion application</p>
+                    </div>
+                    
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="summary">Search the name of a game below for information on that game and/or the game series. 
+                        Alternatively, select options below for a search on top games based on your search criteria.
+                    </p>
+                </div>
+            </div>
+
+
+            <form class="container">
+
+                <div class="row form-group">
+                    <div>
+                        <label for="game-name">Enter the game name:</label>
+                    </div>
+                    <input type="text" class="form-control" id="game-name" aria-describedby="no-game-name">
+                    <small id="no-game-name">No need to enter a name if you just want a general category search, see below.</small>
+                </div>
+
+                <div class="row">
+                    <p>Complete at the first three fields below to begin search</p>
+                </div>
+
+                <div class="row form-group form-box">
+                    <div class="col-sm-4">
+                        <label class="form-check-label" for="gameRadios1">Gaming Platform:</label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios1" value="option1">XBox</label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios1" value="option1">PS4</label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios1" value="option1">PC</label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios1" value="option1">Wii</label>
+                        <br>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <label class="form-check-label" for="gameRadios2">Gaming Genres:</label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios2" value="option2">RPG</label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios2" value="option2">FPS</label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios2" value="option2">RTS</label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios2" value="option2">OSPCO</label>
+                        <br>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <label class="form-check-label" for="gameRadios2">Gaming Type:</label><br>
+                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios3" value="option3">RPG</label><br>
+                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios3" value="option3">RPG</label><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    
+
+    </div>
+</body>
+
+</html>
