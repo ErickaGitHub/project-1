@@ -1,16 +1,27 @@
-//$(function(){
-    $.ajax({
-        method: 'GET',
-        url: 'https://api-endpoint.igdb.com/games/?search=halo&fields=*',
-        headers: {
-            'user-key': '883731a3016e0a598926c2eb709f3f68',
-            'Access-Control-Allow-Origin': "127.0.0.1",
-            'Accept': 'application/json'
-        }
-    }).done(function (response) {
-        console.log(response);
-    });
+$(function(){
+
+
+// -----------------------Kim's Section Starts------------------------  
+let dessertInput= ""
+
+function ajaxCall() {
+        console.log(dessertInput + "this is search term")
+        let queryURL = "http://api.yummly.com/v1";
+
+        $.ajax({
+            // make ajax GET request
+            url: queryURL + encodeURIComponent(dessertInput),
+            method: "GET"
+        })
+        .then(function (response) {
+        
+            console.log(response)
+            for (let i = 0; i < 20; i++) {
   
-  
-    
-//});
+            }
+        });
+    }
+
+// ----------------------Kim's Section Starts--------------------------
+
+});
