@@ -1,5 +1,5 @@
-<!Doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
     <meta charset="utf-8" />
@@ -7,89 +7,115 @@
     <title>Dessert Crave</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Handlee|Pacifico|Satisfy|Signika" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
     <script src="javascript/app.js"></script>
 </head>
 
 <body>
-<div class="container page-bkgd">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="jumbotron">
-                        <h1>Dessert Crave</h1>
-                        <p>The dessert suggestion application</p>
-                    </div>
-                    
-                </div>
+
+    <div class="container page-bkgd">
+
+        <div class="row title-label">
+            <div class="col-sm-12">
+                <p class="title">Dessert Crave</p>
+                <p class="subtitle">The dessert suggestion application</p>
             </div>
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <p class="summary">Search the name of a dessert below for recipes and instructional videos on how to make it. 
-                        Alternatively, select options below for a search top desserts based on your search criteria.
-                    </p>
-                </div>
-            </div>
-
-
-            <form class="container">
-
-                <div class="row form-group">
-                    <div>
-                        <label for="game-name">Enter the name of a specific dessert:</label>
-                    </div>
-                    <input type="text" class="form-control" id="game-name" aria-describedby="no-game-name">
-                    <small id="no-game-name">No need to enter a name if you just want a general category search, see below.</small>
-                </div>
-
-                <div class="row">
-                    <p>Complete at the first three fields below to begin search</p>
-                </div>
-
-                <div class="row form-group form-box">
-                    <div class="col-sm-4">
-                        <label class="form-check-label" for="gameRadios1">Gaming Platform:</label>
-                        <br>
-                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios1" value="option1">XBox</label>
-                        <br>
-                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios1" value="option1">PS4</label>
-                        <br>
-                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios1" value="option1">PC</label>
-                        <br>
-                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios1" value="option1">Wii</label>
-                        <br>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <label class="form-check-label" for="gameRadios2">Gaming Genres:</label>
-                        <br>
-                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios2" value="option2">RPG</label>
-                        <br>
-                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios2" value="option2">FPS</label>
-                        <br>
-                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios2" value="option2">RTS</label>
-                        <br>
-                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios2" value="option2">OSPCO</label>
-                        <br>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <label class="form-check-label" for="gameRadios2">Gaming Type:</label><br>
-                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios3" value="option3">RPG</label><br>
-                        <input class="form-check-input" type="radio" name="gamingRadios" id="gameRadios3" value="option3">RPG</label><br>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
         </div>
-    
+
+        <div class="row summary">
+            <div class="col-sm-12">
+                <p>Search the name of a dessert below for recipes and instructional videos on how to make it. Alternatively,
+                    select options below for a search top desserts based on your search criteria.
+                </p>
+            </div>
+        </div>
+
+
+        <form class="row form-text">
+
+            <div class="row form-group">
+                <div>
+                    <label for="game-name">Enter the name of a specific dessert:</label>
+                </div>
+                <input type="text" class="form-control" id="game-name" aria-describedby="no-game-name">
+                <small id="no-game-name" style="text-shadow: 1px 1px black;">No need to enter a name if you just want a general category search, see below.</small>
+            </div>
+
+            <div class="row">
+                <p>Complete at the first three fields below to begin search</p>
+            </div>
+
+            <div class="row form-group form-box">
+                <div class="col-sm-4">
+                    <label class="form-check-label" for="dessertRadios1">What type of dessert are you searching for?</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="dessertRadios1" value="option1">Cake</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="dessertRadios1" value="option1">Cookies</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="dessertRadios1" value="option1">Custard</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="dessertRadios1" value="option1">Cupcakes</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="dessertRadios1" value="option1">Pies</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="dessertRadios1" value="option1">Puddings</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="dessertRadios1" value="option1">Other</label>
+                    <br>
+                </div>
+
+                <div class="col-sm-4">
+                    <label class="form-check-label" for="dessertRadios2">What flavor would you like your dessert?</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="dessertRadios2" value="option2">Chocolate</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="dessertRadios2" value="option2">Vanilla</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="dessertRadios2" value="option2">Lemon</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="dessertRadios2" value="option2">Cream Cheese</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="dessertRadios2" value="option2">Peanut Butter</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="dessertRadios2" value="option2">Apple</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="dessertRadios2" value="option2">Other</label>
+                    <br>
+                </div>
+
+                <div class="col-sm-4">
+                    <label class="form-check-label" for="dessertRadios3">What is your preferred prep and cook time?</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="gameRadios3" value="option3">Less than 20mins</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="gameRadios3" value="option3">20 - 40mins</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="gameRadios3" value="option3">41 - 60mins</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="gameRadios3" value="option3">61 - 120mins</label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="dessertRadios" id="gameRadios3" value="option3">more than 120mins</label>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row submit">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
 
     </div>
 </body>
+
 </html>
