@@ -28,7 +28,7 @@ body {
 .form-text {
     text-align: justify;
     z-index: 1;
-    background-color: rgba(131, 170, 180, 0.4);
+    background-color: rgba(163, 165, 154, 0.8);
     text-shadow: 2px 2px black;
     color: rgb(33, 150, 189);
     font-weight: 600;
@@ -61,7 +61,7 @@ body {
 }
 
 .result-pg {
-    background-color: rgba(131, 170, 180, 0.4);
+    background-color: rgba(163, 165, 154, 0.8);
     background-image: none;
 }
 
