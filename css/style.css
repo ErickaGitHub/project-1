@@ -47,8 +47,9 @@ body {
     padding: 10px;
 }
 
-.submit {
+.button-bkgd {
     background-color: none;
+    font-family: 'Satisfy','cursive',sans-serif;
 }
 
 
@@ -65,6 +66,23 @@ body {
     background-image: none;
 }
 
+
+/* -----------------------Single Result Page Specific CSS---------------*/
+
+.single-result-bkgd {
+    background-image: url("../images/Alldessertsimage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.single-result-pg {
+    background-color: rgba(163, 165, 154, 0.8);
+    background-image: none;
+}
+
+#single-pick {
+    color: lightskyblue;
+}
 
 /* ------------------------ Other Comments below 
 Font families
