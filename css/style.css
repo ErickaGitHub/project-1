@@ -67,8 +67,18 @@ body {
 }
 
 #results-table {
-    font-size: 20px;
+    font-size: 24px;   
 }
+
+.theight {
+    overflow: auto;
+    max-height: 700px;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
 
 /* -----------------------Single Result Page Specific CSS---------------*/
 

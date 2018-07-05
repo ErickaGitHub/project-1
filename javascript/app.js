@@ -21,36 +21,36 @@ $(function () {
                 console.log(response)
 
                 for (let i=0; i < response.matches.length; i++) {
+
                 // store the needed results data
                 dessertName = response.matches[i].recipeName
-                console.log("the dessert name is= " + dessertName)
                 rating = response.matches[i].rating
-             //   console.log("the rating is= " + rating)
                 ingredients = response.matches[i].ingredients
-            //    console.log("the ingredients are= " + ingredients)
                 dessertTime = moment.utc(parseInt(response.matches[i].totalTimeInSeconds) * 1000).format("HH:mm");
-                console.log(dessertTime)
-
                 dessertPhoto = response.matches[i].imageUrlsBySize[90]
-                console.log(typeof(dessertPhoto));
 
-                    if (response.matches[i].rating >= 4 && response.matches[i].course === "Desserts") {
+                if (parseInt(response.matches[i].rating) >= 4) {
                         console.log("this is highly rated = " + dessertName);
 
-                        $("#results-table > tbody").append("<tr><td>" + dessertName + "</td><td>" + rating + "</td><td>"
-                        + dessertTime + "</td><td>" +  + "</td>")
-                    }
-                }
-      
-                $("#results-table > tbody").append(`
-                <tr>
+                    $("#results-table > tbody").append(`
+                    <tr id="${dessertName}">
                     <td> ${dessertName}  </td>
                     <td>  ${rating}  </td>
                     <td> ${dessertTime} </td>
-                    <td> <img src="${dessertPhoto}">  </td>`)
+                    <td> <img src="${dessertPhoto}" class="zoom" data-caption="${dessertName}"></td>`)
+                }
+                 
+                else if (response.matches[i].attributes.course[0] !== "Desserts") {
+                    $("results-table").remove();
+                    $(".no-results").append(`<p> Sorry. We couldn't find any results related to your search. Please press 'reset' and try another search.</p>`)
+                }
 
+                 }
             });
     }
+
+    console.log("materialized worked");
+
 
     recipeSearch();
     // ----------------------Kim's Section Ends----------------------------------
