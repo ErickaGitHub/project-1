@@ -17,6 +17,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
     <script src="javascript/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
             <div class="col-sm-12">
                 <p> Below are the results from your search, we've selected the top 20 that best matched your search criteria
                     for
-                    <span id="main-criteria">#######</span>.
+                    <span id="main-criteria"></span>.
 
                 </p>
             </div>
@@ -41,9 +42,18 @@
 
         <div class="row summary">
             <div class="col-sm-12">
-                <div class="results-here"> 
-                    Results Here
-                </div>
+                <table class="table" id="results-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Dessert Name</th>
+                            <th scope="col">Rating (5 star based)</th>
+                            <th scope="col">Prep &amp; Cook Time (mins)</th>
+                            <th scope="col">Dessert Photo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
             </div>
         </div>
 

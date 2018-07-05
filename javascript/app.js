@@ -2,9 +2,10 @@ $(function () {
 
 
     // -----------------------Kim's Section Starts------------------------  
-    let dessertInput = ""
-    let dessertName = ""
-
+    let dessertInput = "";
+    let dessertName = "";
+    let ingredients = "";
+    let dessertTime= "";
 
     function recipeSearch() {
         console.log(dessertInput + "this is search term")
@@ -12,28 +13,42 @@ $(function () {
 
         $.ajax({
                 // make ajax GET request
-                url: queryURL + encodeURIComponent("pie") + "&allowedCourse[]=course^course-Desserts",
+                url: queryURL + encodeURIComponent("pie") + "&allowedCourse[]=course^course-Desserts&maxResult=20",
                 method: "GET"
             })
             .then(function (response) {
 
                 console.log(response)
 
-                for (let i=0; i < 10; i++) {
+                for (let i=0; i < response.matches.length; i++) {
                 // store the needed results data
                 dessertName = response.matches[i].recipeName
-             //   console.log("the dessert name is= " + dessertName)
+                console.log("the dessert name is= " + dessertName)
                 rating = response.matches[i].rating
              //   console.log("the rating is= " + rating)
                 ingredients = response.matches[i].ingredients
             //    console.log("the ingredients are= " + ingredients)
-                
-                if (response.matches[i].rating >= 4) {
-                    console.log("this is highly rated = " + dessertName);
+                dessertTime = moment.utc(parseInt(response.matches[i].totalTimeInSeconds) * 1000).format("HH:mm");
+                console.log(dessertTime)
 
-                    
-                } 
+                dessertPhoto = response.matches[i].imageUrlsBySize[90]
+                console.log(typeof(dessertPhoto));
+
+                    if (response.matches[i].rating >= 4 && response.matches[i].course === "Desserts") {
+                        console.log("this is highly rated = " + dessertName);
+
+                        $("#results-table > tbody").append("<tr><td>" + dessertName + "</td><td>" + rating + "</td><td>"
+                        + dessertTime + "</td><td>" +  + "</td>")
+                    }
                 }
+      
+                $("#results-table > tbody").append(`
+                <tr>
+                    <td> ${dessertName}  </td>
+                    <td>  ${rating}  </td>
+                    <td> ${dessertTime} </td>
+                    <td> <img src="${dessertPhoto}">  </td>`)
+
             });
     }
 
@@ -51,4 +66,8 @@ $(function () {
         console.log(response);
     })
 */
+
+
+    
+
 });

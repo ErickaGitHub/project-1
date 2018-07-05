@@ -66,6 +66,9 @@ body {
     background-image: none;
 }
 
+#results-table {
+    font-size: 20px;
+}
 
 /* -----------------------Single Result Page Specific CSS---------------*/
 
