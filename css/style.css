@@ -5,19 +5,25 @@ body {
     padding: 30px;
 }
 
+.row {
+    margin-bottom: 30px;
+}
+
 .title {
     font-family: 'Pacifico','Satisfy','cursive',sans-serif;
+    font-display: fallback;
     text-shadow: 3px 3px rgb(20, 27, 121);
     font-size: 80px;
 }
 
 .subtitle {    
     font-family: 'Caveat','Satisfy','cursive',sans-serif;
+    font-display: fallback;
     font-size: 40px;
 }
 
 .title-label {
-    background-image: url("../images/dessertssign.jpg");
+    background-image: ur("../images/dessertssign.jpg");
     text-shadow: 2px 2px rgb(20, 27, 121);
     color: lightskyblue;
     z-index: 1;
@@ -37,12 +43,14 @@ body {
 
 .form-text {
     font-family: 'Signika','Satisfy','cursive',sans-serif;
-    font-size: 20px;
+    font-display: fallback;
+    font-size: 26px;
     padding: 30px;
 }
 
 .summary {
     font-family: 'Satisfy','cursive',sans-serif;
+    font-display: fallback;
     font-size: 30px;
     padding: 10px;
 }
@@ -50,8 +58,13 @@ body {
 .button-bkgd {
     background-color: none;
     font-family: 'Satisfy','cursive',sans-serif;
+    font-display: fallback;
 }
 
+.hide-one,
+.hide-two {
+    display: none;
+}
 
 /* -----------------------Results Page Specific CSS---------------*/
 

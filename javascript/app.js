@@ -5,7 +5,8 @@ $(function () {
     let dessertInput = "";
     let dessertName = "";
     let ingredients = "";
-    let dessertTime= "";
+    let dessertTime = "";
+    let criteriaAdded = "";
 
     function recipeSearch() {
         console.log(dessertInput + "this is search term")
@@ -49,10 +50,20 @@ $(function () {
             });
     }
 
-    console.log("materialized worked");
+
+    let categorySearch = function() {
+        
+    }
+
+    // Submit either the typed search term(s) or the criteria selections
+    $("#submit").on("click", function() {
+        event.preventDefault();
+        criteriaAdded = $("#dessert-name").val().trim();
+        console.log(criteriaAdded)
+    });
 
 
-    recipeSearch();
+    //recipeSearch();
     // ----------------------Kim's Section Ends----------------------------------
 
 /*
