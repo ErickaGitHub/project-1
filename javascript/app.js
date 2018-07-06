@@ -13,7 +13,7 @@ $(function () {
     }
 
     // Selet to enter search text or use radio criteria for search
-    $(".form-check-input").on('click', function () {
+    $(".form-check-input1").on('click', function () {
         // make visible the search term input box
         if ($("#enter-name").is(':checked')) {
             $(".option-one").removeAttr("id");

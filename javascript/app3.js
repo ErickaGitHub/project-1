@@ -37,11 +37,18 @@ $(function () {
                 dessertId = response.id;
                 dessertName = response.name;
                 ingredients = response.ingredientLines;
+                
+                //murat code:
+                ingTxt = "";
+                for(var x = 0; x<ingredients.length; x++){
+                    ingTxt += ingredients[x] + "<br/>";
+                }
+                
                 recipeLink = response.attribution.url;
                 dessertTime = moment.utc(parseInt(response.totalTimeInSeconds) * 1000).format("HH:mm");
 
                 $(".single-pick").html(dessertName);
-                $("#ingredients").html(ingredients);
+                $("#ingredients").html(ingTxt);
                 $("#recipe-link").html(`<a href="${recipeLink}">${recipeLink}</a>`);
 
             });
