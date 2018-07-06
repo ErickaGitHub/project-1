@@ -41,32 +41,30 @@
             </div>
         </div>
 
+        <form class="row form-text myform" action="resultpg.html" method="GET">
 
-        <form class="row form-text">
-
-            <div class="row">
+            <div class="row" id="intro-question">
 
                 <div class="col-sm-12">
-                    <label class="form-check-label" for="dessertRadios0">How would you like to search for a dessert?</label>
+                    <label class="form-check-label" for="dessertRadios0" style="text-decoration:underline;">How would you like to search for a dessert?</label>
                     <br>
-                    <input class="form-check-input" type="radio" name="dessertRadios0" value="option0">Enter the name of a specific dessert.</input>
+                    <input class="form-check-input" type="radio" name="dessertRadios0" id="enter-name" value="option0">Enter the name of a specific dessert.</input>
                     <br>
-                    <input class="form-check-input" type="radio" name="dessertRadios0" value="option0">Select criteria to request a category search by type, flavor, and cook time.</input>
+                    <input class="form-check-input" type="radio" name="dessertRadios0" id="criteria-search" value="option0">Select criteria to request a category search by type, flavor, and cook time.</input>
 
                 </div>
 
             </div>
 
-            <div class="row">
+            <div class="row option-one" id="hide-one">
                 <div>
                     <label for="dessert-name">Enter the name of a specific dessert:</label>
                 </div>
-                <input type="text" class="form-control" id="dessert-name" aria-describedby="no-dessert-name">
-                <small id="no-dessert-name" style="text-shadow: 1px 1px black;">No need to enter a name if you just want a general category search, see below.</small>
+                <input type="text" class="form-control" id="dessert-name" name="dessert"></input>
             </div>
 
 
-            <div class="row">
+            <div class="row option-two" id="hide-two">
                 <div class="col-sm-12">
                     <div class="row">
                         <p style="text-decoration:underline;">Complete all three fields below to begin search</p>
@@ -76,17 +74,17 @@
                         <div class="col-sm-4">
                             <label class="form-check-label" for="dessertRadios1">What type of dessert are you searching for?</label>
                             <br>
-                            <input class="form-check-input" type="radio" name="dessertRadios1" value="option1">Cake</input>
+                            <input class="form-check-input" type="radio" name="q" value="cake">Cake</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="dessertRadios1" value="option1">Cookies</input>
+                            <input class="form-check-input" type="radio" name="q" value="cookies">Cookies</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="dessertRadios1" value="option1">Custard</input>
+                            <input class="form-check-input" type="radio" name="q" value="custard">Custard</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="dessertRadios1" value="option1">Cupcakes</input>
+                            <input class="form-check-input" type="radio" name="q" value="cupcakes">Cupcakes</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="dessertRadios1" value="option1">Pies</input>
+                            <input class="form-check-input" type="radio" name="q" value="pies">Pies</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="dessertRadios1" value="option1">Puddings</input>
+                            <input class="form-check-input" type="radio" name="q" value="puddings">Puddings</input>
 
 
                         </div>
@@ -94,31 +92,31 @@
                         <div class="col-sm-4">
                             <label class="form-check-label" for="dessertRadios2">What flavor would you like your dessert?</label>
                             <br>
-                            <input class="form-check-input" type="radio" name="dessertRadios2" value="option2">Chocolate</input>
+                            <input class="form-check-input" type="radio" name="flavor" value="chocolate">Chocolate</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="dessertRadios2" value="option2">Vanilla</input>
+                            <input class="form-check-input" type="radio" name="flavor" value="vanilla">Vanilla</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="dessertRadios2" value="option2">Lemon</input>
+                            <input class="form-check-input" type="radio" name="flavor" value="lemon">Lemon</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="dessertRadios2" value="option2">Cream Cheese</input>
+                            <input class="form-check-input" type="radio" name="flavor" value="cream-cheese">Cream Cheese</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="dessertRadios2" value="option2">Peanut Butter</input>
+                            <input class="form-check-input" type="radio" name="flavor" value="peanut-butter">Peanut Butter</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="dessertRadios2" value="option2">Apple</input>
+                            <input class="form-check-input" type="radio" name="flavor" value="apple">Apple</input>
                         </div>
 
                         <div class="col-sm-4">
                             <label class="form-check-label" for="dessertRadios3">What is your preferred prep and cook time?</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="dessertRadios3" value="option3">Less than 20mins</input>
+                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="600">10 mins</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="dessertRadios3" value="option3">20 - 40mins</input>
+                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="1800">20 - 40mins</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="dessertRadios3" value="option3">41 - 60mins</input>
+                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="3600">41 - 60mins</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="dessertRadios3" value="option3">61 - 120mins</input>
+                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="61-120">61 - 120mins</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="dessertRadios3" value="option3">more than 120mins</input>
+                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="more-than-120">more than 120mins</input>
                                 <br>
                         </div>
                     </div>
@@ -126,7 +124,7 @@
 
             </div>
 
-            <div class="row button-bkgd">
+            <div class="row button-bkgd submit-div" id="hide">
                 <div class="col-sm-12">
                     <button id="submit">Submit</button>
                 </div>
@@ -134,11 +132,12 @@
         </form>
     </div>
   
-
-
-
     </div>
-
+    <div class="button-bkgd" style="text-align:center;justify-content:space-evenly;position:relative;bottom:0;">
+        <audio autoplay id="page-audio" src="audio/Pure Imagination.mp3" type="audio/mp3"></audio>
+        <button class="play-audio" type="button">Play Audio</button>
+        <button class="pause-audio" type="button">Pause Audio</button> 
+    </div>
 
     </div>
 </body>
