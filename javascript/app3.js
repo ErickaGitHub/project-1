@@ -84,11 +84,12 @@ $(function () {
     $("#reset").on("click", function () {
         reset();
         themeSong.pause();
+
     });
-    // ----------------------Kim's Section Ends----------------------------------
+    // ----------------------Kim's Section Ends/Anthony's Section Starts----------------------------------
 
     /*
-        // ----------------------Anthony's Section Starts----------------------------
+        // --------------------------------------------------
         let queryURL = "https://www.googleapis.com/youtube/v3/AIzaSyBqsfshUVe2dhIcYn_bKTXrpr9Pst1g3Vo"
 
         $.ajax({
@@ -100,6 +101,11 @@ $(function () {
     */
 
 
+    // ---------------------Anthony's Section Ends/ Ericka's Section Starts----------------------------------
 
+
+
+
+  
 
 });
