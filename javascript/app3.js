@@ -63,7 +63,7 @@ $(function () {
     recipeSearch();
 
     // reset to main page and clear all values
-    function reset() {
+    let reset = function() {
         window.location = "index.html";
         $("#dessert-name").empty();
         $(".form-check-input").prop("checked", false);
@@ -77,6 +77,7 @@ $(function () {
 
     $("#reset").on("click", function () {
         reset();
+        themeSong.pause();
     });
     // ----------------------Kim's Section Ends----------------------------------
 

@@ -65,13 +65,14 @@ $(function () {
                     dessertId = $(this).attr("id");
                     console.log("recipe selected is = " + dessertId);
                     window.location = "singleresultpg.html?id=" + dessertId;
+                    themeSong.play();
 
                 })
             });
     };
 
     // reset to main page and clear all values
-    function reset() {
+    let reset = function() {
         window.location = "index.html";
         $("#dessert-name").empty();
         $(".form-check-input").prop("checked", false);
@@ -80,11 +81,11 @@ $(function () {
         $("#ingredients").empty();
         $("#recipe-link").empty();
         $(".video").empty();
-        themeSong.pause();
     }
 
     $("#reset").on("click", function () {
         reset();
+        themeSong.pause();
     });
 
     // Read a page's GET URL variables and return them as an associative array.
@@ -101,6 +102,7 @@ $(function () {
     }
     dessertInput = getUrlVars()["q"];
     recipeSearch();
+
 
     // ----------------------Kim's Section Ends----------------------------------
 

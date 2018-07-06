@@ -3,16 +3,6 @@ $(function () {
 
     // -----------------------Kim's Section Starts------------------------  
     let dessertInput = "";
-    let themeSong = document.getElementById('page-audio');
-
-    // audio to play/pause music buttons
-    $('.play-audio').click(function () {
-        themeSong.play();
-    });
-
-    $('.pause-audio').click(function () {
-        themeSong.pause();
-    });
 
     // validate search form entry
     function validateForm() {
@@ -24,7 +14,6 @@ $(function () {
 
     // Selet to enter search text or use radio criteria for search
     $(".form-check-input").on('click', function () {
-        themeSong.play();
         // make visible the search term input box
         if ($("#enter-name").is(':checked')) {
             $(".option-one").removeAttr("id");
