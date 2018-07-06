@@ -26,14 +26,15 @@
 
         <div class="row title-label">
             <div class="col-sm-12">
-                <p class="title">Dessert Crave</p>
+                <p class="title" id="pgMainTitle">Dessert Crave</p>
                 <p class="subtitle">The dessert suggestion application</p>
             </div>
         </div>
 
         <div class="row summary">
             <div class="col-sm-12">
-                <p style="text-align:center;"> Got a sweet tooth? Wanna try a new dessert? Well you're in the right place for it. Search the name of a dessert
+                <!-- murat changes: -->
+                <p> Got a sweet tooth? Wanna try a new dessert? Well you're in the right place for it. Search the name of a dessert
                     below for recipes and instructional videos on how to make it. Alternatively, select options below and
                     we'll fine some of the top desserts out there based on your search criteria. Let's get started and satisfy
                     that dessert crave!
@@ -48,9 +49,9 @@
                 <div class="col-sm-12">
                     <label class="form-check-label" for="dessertRadios0" style="text-decoration:underline;">How would you like to search for a dessert?</label>
                     <br>
-                    <input class="form-check-input" type="radio" name="dessertRadios0" id="enter-name" value="option0">Enter the name of a specific dessert.</input>
+                    <input class="form-check-input1" type="radio" name="dessertRadios0" id="enter-name" value="option0">Enter the name of a specific dessert.</input>
                     <br>
-                    <input class="form-check-input" type="radio" name="dessertRadios0" id="criteria-search" value="option0">Select criteria to request a category search by type, flavor, and cook time.</input>
+                    <input class="form-check-input1" type="radio" name="dessertRadios0" id="criteria-search" value="option0">Select criteria to request a category search by type, flavor, and cook time.</input>
 
                 </div>
 
@@ -66,25 +67,26 @@
 
             <div class="row option-two" id="hide-two">
                 <div class="col-sm-12">
+                    <!-- murat changes -->
                     <div class="row">
                         <p style="text-decoration:underline;">Complete all three fields below to begin search</p>
                     </div>
 
-                    <div class="row">
+                    <div class="row allSearch">
                         <div class="col-sm-4">
                             <label class="form-check-label" for="dessertRadios1">What type of dessert are you searching for?</label>
                             <br>
-                            <input class="form-check-input" type="radio" name="q" value="cake">Cake</input>
+                            <input class="form-check-input1" type="radio" name="q" value="cake">Cake</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="q" value="cookies">Cookies</input>
+                            <input class="form-check-input1" type="radio" name="q" value="cookies">Cookies</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="q" value="custard">Custard</input>
+                            <input class="form-check-input1" type="radio" name="q" value="custard">Custard</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="q" value="cupcakes">Cupcakes</input>
+                            <input class="form-check-input1" type="radio" name="q" value="cupcakes">Cupcakes</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="q" value="pies">Pies</input>
+                            <input class="form-check-input1" type="radio" name="q" value="pies">Pies</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="q" value="puddings">Puddings</input>
+                            <input class="form-check-input1" type="radio" name="q" value="puddings">Puddings</input>
 
 
                         </div>
@@ -92,31 +94,31 @@
                         <div class="col-sm-4">
                             <label class="form-check-label" for="dessertRadios2">What flavor would you like your dessert?</label>
                             <br>
-                            <input class="form-check-input" type="radio" name="flavor" value="chocolate">Chocolate</input>
+                            <input class="form-check-input1" type="radio" name="flavor" value="chocolate">Chocolate</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="flavor" value="vanilla">Vanilla</input>
+                            <input class="form-check-input1" type="radio" name="flavor" value="vanilla">Vanilla</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="flavor" value="lemon">Lemon</input>
+                            <input class="form-check-input1" type="radio" name="flavor" value="lemon">Lemon</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="flavor" value="cream-cheese">Cream Cheese</input>
+                            <input class="form-check-input1" type="radio" name="flavor" value="cream-cheese">Cream Cheese</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="flavor" value="peanut-butter">Peanut Butter</input>
+                            <input class="form-check-input1" type="radio" name="flavor" value="peanut-butter">Peanut Butter</input>
                             <br>
-                            <input class="form-check-input" type="radio" name="flavor" value="apple">Apple</input>
+                            <input class="form-check-input1" type="radio" name="flavor" value="apple">Apple</input>
                         </div>
 
                         <div class="col-sm-4">
                             <label class="form-check-label" for="dessertRadios3">What is your preferred prep and cook time?</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="600">10 mins</input>
+                                <input class="form-check-input1" type="radio" name="time" id="dessert-opt-3" value="600">10 mins</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="1800">20 - 40mins</input>
+                                <input class="form-check-input1" type="radio" name="time" id="dessert-opt-3" value="1800">20 - 40mins</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="3600">41 - 60mins</input>
+                                <input class="form-check-input1" type="radio" name="time" id="dessert-opt-3" value="3600">41 - 60mins</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="61-120">61 - 120mins</input>
+                                <input class="form-check-input1" type="radio" name="time" id="dessert-opt-3" value="61-120">61 - 120mins</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="more-than-120">more than 120mins</input>
+                                <input class="form-check-input1" type="radio" name="time" id="dessert-opt-3" value="more-than-120">more than 120mins</input>
                                 <br>
                         </div>
                     </div>
@@ -126,7 +128,7 @@
 
             <div class="row button-bkgd submit-div" id="hide">
                 <div class="col-sm-12">
-                    <button id="submit">Submit</button>
+                    <button class="btn btn-primary" id="submit">Submit</button>
                 </div>
             </div>
         </form>

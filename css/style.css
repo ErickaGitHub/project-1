@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
     padding: 30px;
+
 }
 
 .row {
@@ -10,10 +11,15 @@ body {
 }
 
 .title {
-    font-family: 'Pacifico','Satisfy','cursive',sans-serif;
+    /* font-family: 'Pacifico','Satisfy','cursive',sans-serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: black;
     font-display: fallback;
-    text-shadow: 3px 3px rgb(20, 27, 121);
-    font-size: 80px;
+    /* text-shadow: 3px 3px rgb(20, 27, 121); */
+    font-size: 30px;
 }
 
 .subtitle {    
@@ -23,8 +29,10 @@ body {
 }
 
 .title-label {
-    background-image: ur("../images/dessertssign.jpg");
-    text-shadow: 2px 2px rgb(20, 27, 121);
+    /* background-image: ur("../images/dessertssign.jpg"); */
+    /* murat changes: */
+    /* text-shadow: 2px 2px rgb(20, 27, 121); */
+    padding-top: 15px;
     color: lightskyblue;
     z-index: 1;
     text-align: center;
@@ -34,32 +42,55 @@ body {
 .form-text {
     text-align: justify;
     z-index: 1;
-    background-color: rgba(163, 165, 154, 0.8);
-    text-shadow: 2px 2px black;
-    color: rgb(33, 150, 189);
+    /* background-color: rgba(163, 165, 154, 0.8); murat chages: */
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px gray solid;
+    
+    /* text-shadow: 2px 2px black; */
+    /* color: rgb(33, 150, 189); murat changes */
+    line-height: 1.8;
+    color:black;
     font-weight: 600;
     margin: 20px;
 }
 
 .form-text {
-    font-family: 'Signika','Satisfy','cursive',sans-serif;
+    /* font-family: 'Signika','Satisfy','cursive',sans-serif; murat change*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-display: fallback;
     font-size: 26px;
     padding: 30px;
 }
 
 .summary {
-    font-family: 'Satisfy','cursive',sans-serif;
-    font-display: fallback;
-    font-size: 30px;
-    padding: 10px;
-}
+    /* font-family: 'Satisfy','cursive',sans-serif;  murat changes*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
 
-.button-bkgd {
+    font-display: fallback;
+    font-size: 24px;
+    padding: 25px;
+}
+.form-check-input1{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -23px;
+}
+.allSearch{
+    font-size: 20px;
+    color: rgb(61, 61, 61);
+}
+.allSearch label{
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+    margin-right: 24px;
+}
+/* .button-bkgd {
     background-color: none;
     font-family: 'Satisfy','cursive',sans-serif;
     font-display: fallback;
-}
+    murat changes!
+} */
 
 #hide,
 #hide-one,
@@ -76,12 +107,15 @@ body {
 }
 
 .result-pg {
-    background-color: rgba(163, 165, 154, 0.8);
-    background-image: none;
+    /* background-color: rgba(163, 165, 154, 0.8);
+    background-image: none;   murat changes */
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px gray solid;
 }
 
 #results-table {
-    font-size: 24px;   
+    /* murat changes */
+    font-size: 20px;   
 }
 
 .theight {
@@ -111,7 +145,25 @@ body {
     color: lightskyblue;
     text-decoration: underline;
 }
-
+/* murat changes: */
+.ingTitle{
+    color: black;
+    font-weight: 900;
+    font-size: 25px;
+}
+#ingredients{
+    color: black;
+    font-weight: 100;
+    font-size: 25px; 
+}
+#pgMainTitle{
+    font-family: Pacifico, Satisfy, cursive, sans-serif;
+    text-shadow: rgb(20, 27, 121) 3px 3px;
+    font-size: 80px;
+    color: lightskyblue;
+    font-weight: 400;
+    line-height: 1.5;
+}
 /* ------------------------ Other Comments below 
 Font families
 font-family: 'Pacifico', cursive;
@@ -120,3 +172,20 @@ font-family: 'Satisfy', cursive;
 font-family: 'Handlee', cursive;
 font-family: 'Caveat', cursive;
 https://fonts.googleapis.com/css?family=Caveat|Handlee|Pacifico|Satisfy|Signika
+/*tablet*/
+
+ @media screen and (max-width: 980px) {
+     
+ }
+
+ 
+
+ @media screen and (max-width: 768px) {
+
+    
+ }
+
+
+ @media screen and (max-width: 640px) {
+     
+ }
