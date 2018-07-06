@@ -17,8 +17,10 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-    <script src="javascript/app.js"></script>
+    <script src="javascript/app2.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script>
+    </script>
 </head>
 
 <body>
@@ -35,7 +37,7 @@
             <div class="col-sm-12">
                 <p> Below are the results from your search, we've selected the top 20 that best matched your search criteria
                     for
-                    <span id="main-criteria"></span>.
+                    <span id="dessert-search"></span>.
 
                 </p>
             </div>
@@ -61,6 +63,13 @@
         <div class="row button-bkgd">
             <button id="reset">Reset Search</button>
         </div>
+
+        <div class="button-bkgd" style="text-align:center;justify-content:space-evenly;position:relative;bottom:0;">
+            <audio autoplay id="page-audio" src="audio/Pure Imagination.mp3" type="audio/mp3"></audio>
+            <button class="play-audio" type="button">Play Audio</button>
+            <button class="pause-audio" type="button">Pause Audio</button>
+        </div>
+        
     </div>
 </body>
 
