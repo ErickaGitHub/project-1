@@ -22,6 +22,7 @@ $(function () {
         console.log('search term is= ' + q);
         $("#stay-hidden").val(q);
         $(".option-one").attr("id", "hide-one");
+        $(".option-two").attr("id", "hide-one");
         $(".enter-div").attr("id", "hide-three");
         $(".submit-form").removeAttr("id");
     };
@@ -45,7 +46,7 @@ $(function () {
     });
 
     // On click set the api search term to a new form for submit
-    $("#enter-text").on("click", function(event) {
+    $(".option-one").on("submit", function(event) {
 
         // validation - if the search is blank or if a none alphabetical character (or space) is search, page will reset
         if ($("#dessert-name").val() == "" || !$("#dessert-name").val().match(/^[a-zA-Z\s]*$/)) {
@@ -55,9 +56,10 @@ $(function () {
             q = $("#dessert-name").val();
             searchTerm();
         }
+        return false;
     });
 
-    $("#enter-criteria").on("click", function(event) {
+    $(".option-two").on("submit", function(event) {
 
         if ($("input:checked[name='dessert-type']").length && $("input:checked[name='flavor']").length) {
             console.log("checked")
