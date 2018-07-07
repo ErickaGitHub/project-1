@@ -1,6 +1,5 @@
 $(function () {
 
-
     // -----------------------Kim's Section Starts------------------------  
     let dessertInput = "";
     let dessertName = "";
@@ -50,7 +49,7 @@ $(function () {
                         <td> ${dessertName}  </td>
                         <td>  ${rating}  </td>
                         <td> ${dessertTime} </td>
-                        <td> <img src="${dessertPhoto}" class="zoom" data-caption="${dessertName}"></td>`)
+                        <td> <img src="${dessertPhoto}" class="zoom" data-caption="${dessertName}"></td>`);
 
                         console.log("row added to table")
                     };
@@ -108,20 +107,5 @@ $(function () {
     $("#dessert-search").html(dessertInput);
 
     // ----------------------Kim's Section Ends----------------------------------
-
-    /*
-        // ----------------------Anthony's Section Starts----------------------------
-        let queryURL = "https://www.googleapis.com/youtube/v3/AIzaSyBqsfshUVe2dhIcYn_bKTXrpr9Pst1g3Vo"
-
-        $.ajax({
-            url: "https://www.googleapis.com/youtube/v3/AIzaSyBqsfshUVe2dhIcYn_bKTXrpr9Pst1g3Vo",
-            method: "GET"
-        }).then(function (response) {
-            console.log(response);
-        })
-    */
-
-
-
 
 });

@@ -1,6 +1,5 @@
 $(function () {
 
-
     // -----------------------Kim's Section Starts------------------------  
     let dessertInput = "";
     let dessertName = "";
@@ -32,7 +31,6 @@ $(function () {
             .then(function (response) {
                 console.log(response)
 
-
                 // store the needed results data
                 dessertId = response.id;
                 dessertName = response.name;
@@ -47,14 +45,7 @@ $(function () {
                 search();
 
             });
-        //-----------Anthony i think you put your ajax pull here for it it use 'dessertName' as the search term
-        
-     //   $('#dessert-name').submit(function (e) {
-     //       e.preventDefault();
-     //   });
-        
-
-
+  
     };
 
     // Read a page's GET URL variables and return them as an associative array.
@@ -69,6 +60,7 @@ $(function () {
         }
         return vars;
     }
+
     dessertId = getUrlVars()["id"];
     console.log('dessert id= ' + dessertId)
     recipeSearch();
@@ -122,7 +114,7 @@ $(function () {
     }
     //Setting variables for needed object items
     function getOutput(item) {
-        let videoId = item.id.videoID;
+        let videoId = item.id.videoId;
         console.log(videoId);
         let title = item.snippet.title;
         console.log(title);
@@ -144,7 +136,5 @@ $(function () {
             '';
         return output;
     };
-
-    // ---------------------Anthony's Section Ends/ Ericka's Section Starts----------------------------------
 
 });

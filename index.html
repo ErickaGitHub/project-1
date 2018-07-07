@@ -49,7 +49,7 @@
                 <br>
                 <input class="form-check-input" type="radio" name="radio1" id="enter-name" value="option0">Enter the name of a specific dessert.</input>
                 <br>
-                <input class="form-check-input" type="radio" name="radio2" id="criteria-search" value="option0">Select criteria to request a category search by type, flavor, and cook time.</input>
+                <input class="form-check-input" type="radio" name="radio2" id="criteria-search" value="option0">Select criteria to request a category search by type and flavor.</input>
 
             </div>
 
@@ -74,7 +74,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <label class="form-check-label" for="dessertRadios1">What type of dessert are you searching for?</label>
                             <br>
                             <input class="form-check-input" type="radio" name="dessert-type" value="cake">Cake</input>
@@ -88,11 +88,9 @@
                             <input class="form-check-input" type="radio" name="dessert-type" value="pies">Pies</input>
                             <br>
                             <input class="form-check-input" type="radio" name="dessert-type" value="puddings">Puddings</input>
-                            <br>
-                            <input class="form-check-input" type="radio" name="dessert-type" value="">Random dessert!</input>
                         </div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <label class="form-check-label" for="dessertRadios2">What flavor would you like your dessert?</label>
                             <br>
                             <input class="form-check-input" type="radio" name="flavor" value="chocolate">Chocolate</input>
@@ -106,26 +104,8 @@
                             <input class="form-check-input" type="radio" name="flavor" value="peanut-butter">Peanut Butter</input>
                             <br>
                             <input class="form-check-input" type="radio" name="flavor" value="apple">Apple</input>
-                            <br>
-                            <input class="form-check-input" type="radio" name="flavor" value="">Random dessert!</input>
-                        </div>
+                         </div>
 
-                        <div class="col-sm-4">
-                            <label class="form-check-label" for="dessertRadios3">What is your preferred max prep and cook time?</label>
-                            <br>
-                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="900">10 mins</input>
-                            <br>
-                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="1800">30 mins</input>
-                            <br>
-                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="2700">45 mins</input>
-                            <br>
-                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="3600">60 mins</input>
-                            <br>
-                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="7200">120 mins</input>
-                            <br>
-                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="">Anytime</input>
-                            <br>
-                        </div>
                     </div>
 
                 </div>
@@ -147,14 +127,19 @@
 
         </form>
 
-
-        <div class="row button-bkgd enter-div" id="hide-four">
+        <div class="row button-bkgd enter-textdiv" id="hide-four">
             <div class="col-sm-12">
-                <button id="enter">Enter</button>
+                <button id="enter-text">Enter</button>
             </div>
         </div>
 
-        <div class="row button-bkgd reset-div" id="hide-five">
+        <div class="row button-bkgd enter-criteriadiv" id="hide-five">
+            <div class="col-sm-12">
+                <button id="enter-criteria">Enter</button>
+            </div>
+        </div>
+
+        <div class="row button-bkgd reset-div" id="hide-six">
             <div class="col-sm-12">
                 <button id="reset">Reset Search</button>
             </div>
@@ -164,3 +149,23 @@
 </body>
 
 </html>
+
+<!-- Code to add a possible future update:
+       <div class="col-sm-4">
+                            <label class="form-check-label" for="dessertRadios3">What is your preferred max prep and cook time?</label>
+                            <br>
+                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="900">10 mins</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="1800">30 mins</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="2700">45 mins</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="3600">60 mins</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="7200">120 mins</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="">Anytime</input>
+                            <br>
+                        </div>
+
+-->
