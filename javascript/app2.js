@@ -17,7 +17,7 @@ $(function () {
     $('.pause-audio').click(function () {
         themeSong.pause();
     });
-
+    
     // api pull request from yummly api
     function recipeSearch() {
 
@@ -105,6 +105,7 @@ $(function () {
     dessertInput = getUrlVars()["q"];
     recipeSearch()
 
+    $("#dessert-search").html(dessertInput);
 
     // ----------------------Kim's Section Ends----------------------------------
 
