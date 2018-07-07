@@ -67,7 +67,8 @@ body {
 #hide-two,
 #hide-three,
 #hide-four, 
-#hide-five  {
+#hide-five,
+#hide-six  {
     display: none;
 }
 
