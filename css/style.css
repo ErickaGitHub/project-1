@@ -23,7 +23,6 @@ body {
 }
 
 .title-label {
-    background-image: ur("../images/dessertssign.jpg");
     text-shadow: 2px 2px rgb(20, 27, 121);
     color: lightskyblue;
     z-index: 1;
@@ -59,11 +58,16 @@ body {
     background-color: none;
     font-family: 'Satisfy', 'cursive', sans-serif;
     font-display: fallback;
+    font-size: 20px;
 }
 
+#stay-hidden,
 #hide,
 #hide-one,
-#hide-two {
+#hide-two,
+#hide-three,
+#hide-four, 
+#hide-five  {
     display: none;
 }
 
@@ -106,12 +110,12 @@ body {
     background-image: none;
 }
 
+#dessert-search,
 .single-pick {
     color: lightskyblue;
     text-decoration: underline;
 }
 
-/* -----------------------Beginning - Responsive CSS Beginning for all pages - Beginning ---------------*/
 
 /* desktop*/
 
@@ -166,7 +170,7 @@ body {
     .single-pick {
         width: 100%;
     }
-} 
+}
 
 /* tablet */
 
@@ -281,11 +285,17 @@ body {
 
 /* -----------------------END- Responsive CSS Beginning for all pages - END ---------------*/
 
+#ingredients,
+#recipe-link {
+    color: lightskyblue;
+}
 
-
-
+/*---------------------Responsive Design Section for all pages (Ericka)-------------*/
 
 /* ------------------------ Other Comments below ---------------- 
+
+
+/* ------------------------ Other Comments below 
 Font families
 font-family: 'Pacifico', cursive;
 font-family: 'Signika', sans-serif;

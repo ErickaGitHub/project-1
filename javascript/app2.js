@@ -17,7 +17,7 @@ $(function () {
     $('.pause-audio').click(function () {
         themeSong.pause();
     });
-
+    
     // api pull request from yummly api
     function recipeSearch() {
 
@@ -55,6 +55,7 @@ $(function () {
                         console.log("row added to table")
                     };
                     $("#dessert-search").html(dessertInput);
+
                 };
                 // unbind/clear prior click target events and free up DOM
                 $(".dessertHere").unbind();
@@ -65,7 +66,7 @@ $(function () {
                     dessertId = $(this).attr("id");
                     console.log("recipe selected is = " + dessertId);
                     window.location = "singleresultpg.html?id=" + dessertId;
-                    themeSong.play();
+                    themeSong.pause();
 
                 })
             });
@@ -100,9 +101,11 @@ $(function () {
         }
         return vars;
     }
+        
     dessertInput = getUrlVars()["q"];
-    recipeSearch();
+    recipeSearch()
 
+    $("#dessert-search").html(dessertInput);
 
     // ----------------------Kim's Section Ends----------------------------------
 
