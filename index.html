@@ -41,16 +41,16 @@
             </div>
         </div>
 
-        <form class="row form-text myform" action="resultpg.html" method="GET">
+        <form class="row form-text">
 
             <div class="row" id="intro-question">
 
                 <div class="col-sm-12">
                     <label class="form-check-label" for="dessertRadios0" style="text-decoration:underline;">How would you like to search for a dessert?</label>
                     <br>
-                    <input class="form-check-input" type="radio" name="dessertRadios0" id="enter-name" value="option0">Enter the name of a specific dessert.</input>
+                    <input class="form-check-input" type="radio" name="radio1" id="enter-name" value="option0">Enter the name of a specific dessert.</input>
                     <br>
-                    <input class="form-check-input" type="radio" name="dessertRadios0" id="criteria-search" value="option0">Select criteria to request a category search by type, flavor, and cook time.</input>
+                    <input class="form-check-input" type="radio" name="radio2" id="criteria-search" value="option0">Select criteria to request a category search by type, flavor, and cook time.</input>
 
                 </div>
 
@@ -58,9 +58,9 @@
 
             <div class="row option-one" id="hide-one">
                 <div>
-                    <label for="dessert-name">Enter the name of a specific dessert:</label>
+                    <label for="dessert-name">Enter the name of a specific dessert name:</label>
                 </div>
-                <input type="text" class="form-control" id="dessert-name" name="q"></input>
+                <input type="text" class="form-control" id="dessert-name" name="dessert-name"></input>
             </div>
 
 
@@ -85,8 +85,8 @@
                             <input class="form-check-input" type="radio" name="q" value="pies">Pies</input>
                             <br>
                             <input class="form-check-input" type="radio" name="q" value="puddings">Puddings</input>
-
-
+                            <br>
+                            <input class="form-check-input" type="radio" name="q" value="">Random dessert!</input>
                         </div>
 
                         <div class="col-sm-4">
@@ -103,32 +103,50 @@
                             <input class="form-check-input" type="radio" name="flavor" value="peanut-butter">Peanut Butter</input>
                             <br>
                             <input class="form-check-input" type="radio" name="flavor" value="apple">Apple</input>
+                            <br>
+                            <input class="form-check-input" type="radio" name="flavor" value="">Random dessert!</input>
                         </div>
 
                         <div class="col-sm-4">
-                            <label class="form-check-label" for="dessertRadios3">What is your preferred prep and cook time?</input>
+                            <label class="form-check-label" for="dessertRadios3">What is your preferred max prep and cook time?</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="600">10 mins</input>
+                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="900">10 mins</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="1800">20 - 40mins</input>
+                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="1800">30 mins</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="3600">41 - 60mins</input>
+                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="2700">45 mins</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="61-120">61 - 120mins</input>
+                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="3600">60 mins</input>
                                 <br>
-                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="more-than-120">more than 120mins</input>
+                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="7200">120 mins</input>
+                                <br>
+                                <input class="form-check-input" type="radio" name="time" id="dessert-opt-3" value="">Anytime</input>
                                 <br>
                         </div>
                     </div>
-                </div>
 
+                </div>
+            </div>
+            
+            <div class="row button-bkgd enter-div" id="hide-three">
+                <div class="col-sm-12">
+                    <button id="enter">Enter</button>
+                </div>
             </div>
 
-            <div class="row button-bkgd submit-div" id="hide">
+        </form>
+
+        <form class="row form-text submit-form" id="hide-four" action="resultpg.html" method="GET">
+            <p>We've got what you're looking for! Press submit to see your desserts!</p>
+            <div class="search-term">
+                <input type="text" class="form-control" id="stay-hidden" name="dessert-name"></input>
+            </div>
+            <div class="row button-bkgd submit-div">
                 <div class="col-sm-12">
                     <button id="submit">Submit</button>
                 </div>
             </div>
+
         </form>
     </div>
 

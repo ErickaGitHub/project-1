@@ -61,9 +61,12 @@ body {
     font-display: fallback;
 }
 
+#stay-hidden,
 #hide,
 #hide-one,
-#hide-two {
+#hide-two,
+#hide-three,
+#hide-four {
     display: none;
 }
 
@@ -107,10 +110,24 @@ body {
     background-image: none;
 }
 
+#dessert-search,
 .single-pick {
     color: lightskyblue;
     text-decoration: underline;
 }
+
+#ingredients,
+#recipe-link {
+    color: lightskyblue;
+}
+
+/*---------------------Responsive Design Section for all pages (Ericka)-------------*/
+
+
+
+
+
+
 
 /* ------------------------ Other Comments below 
 Font families
