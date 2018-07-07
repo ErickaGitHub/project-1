@@ -21,7 +21,7 @@ $(function () {
     function recipeSearch() {
 
         console.log(dessertInput + " = is search term")
-        let queryURL = "http://api.yummly.com/v1/api/recipes?_app_id=d12c5941&_app_key=608774bd91d1850727be4bd6a7ba4dde&q=";
+        let queryURL = "https://api.yummly.com/v1/api/recipes?_app_id=d12c5941&_app_key=608774bd91d1850727be4bd6a7ba4dde&q=";
 
         $.ajax({
                 // make ajax GET request
